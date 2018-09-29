@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Options</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+		}
+		
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid #000;
+			margin: 1em 0;
+			padding: 0;
+		}
+		
+		.main_content {
+			width: 400px;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main_content" id="main_content">
+		<span style="font-size:150%;">Redirect New Tab To..</span>
+		<hr/>
+		<input type="text" id="main_page" style="width:65%;" />
+		<input type="button" value="Save" id="save_main_page" style="width:10%;" />
+		<br/><br/>
+		<input type="button" value="Reset" id="save_main_page_as_blank" />
+		<br/>
+		Following address are supported:<br/>
+		file:///C:/path/to/main/page.html<br/>
+		http://website.com/path/to/main/page.html<br/>
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+</body>
+</html>

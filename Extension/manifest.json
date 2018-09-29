@@ -1,0 +1,35 @@
+{
+    "name": "New Tab Redirect",
+    "description": "This extension will help you replace the boring New Tab page to the page you want.",
+    "version": "0.5",
+    "author": "Patrick",
+
+    "background": {
+        "persistent": false,
+        "scripts": ["back.js","jquery-3.0.0.js"]
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "20": "icon/48.png",
+            "40": "icon/128.png"
+        },
+        "default_title": "New Tab Redirect",
+        "default_popup": "options.html"
+    },
+
+    "options_page": "options.html",
+
+    "icons": {
+		"128": "icon/128.png",
+		"48": "icon/48.png",
+		"16": "icon/16.png"
+	},
+
+    "default_locale": "en",
+
+    "permissions": [
+         "*://*/*", "tabs", "storage"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}
